@@ -10,8 +10,15 @@
 <body>
   <header class="site-header">
     <a class="logo" href="#home" aria-label="RE:FORM home">RE:FORM</a>
-    <button class="menu-toggle" type="button" aria-label="Open menu">☰</button>
-    <nav class="site-nav" aria-label="Main navigation">
+<button class="menu-toggle"
+        type="button"
+        aria-label="Open menu"
+        aria-expanded="false"
+        aria-controls="main-navigation">☰</button>
+
+<nav class="site-nav"
+     id="main-navigation"
+     aria-label="Main navigation">
       <a href="#catalog">Collections</a>
       <a href="#philosophy">Brand Philosophy</a>
       <a href="#process">Upcycling Process</a>
