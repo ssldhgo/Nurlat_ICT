@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Oversized clothing made from recycled materials.">
+  <title>RE:FORM — Recycled Clothing</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="#home" aria-label="RE:FORM home">RE:FORM</a>
+    <button class="menu-toggle" type="button" aria-label="Open menu">☰</button>
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="#catalog">Collections</a>
+      <a href="#philosophy">Brand Philosophy</a>
+      <a href="#process">Upcycling Process</a>
+      <a href="#stores">Stores</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <p class="eyebrow">LESS WASTE. MORE STYLE.</p>
+      <h1>Unique Oversized Clothing from Recycled Materials</h1>
+      <p class="hero-copy">Simple clothes. A second life for materials.</p>
+      <a class="button" href="#catalog">View collection</a>
+    </section>
+
+    <section class="catalog-section" id="catalog">
+      <div class="section-heading">
+        <p class="eyebrow">OUR COLLECTION</p>
+        <h2>Selected pieces</h2>
+      </div>
+      <div class="catalog">
+        <article class="product-card">
+          <div class="product-image image-one" role="img" aria-label="Dark oversized recycled cotton T-shirt"><span>01</span></div>
+          <h3>Reworked T-shirt</h3>
+          <p class="price">$45</p>
+          <p class="product-info">Size: S–XL</p>
+          <p class="product-info">100% recycled cotton</p>
+          <a class="buy-button" href="#order">Buy</a>
+        </article>
+        <article class="product-card">
+          <div class="product-image image-two" role="img" aria-label="Dark oversized recycled hoodie"><span>02</span></div>
+          <h3>Oversized Hoodie</h3>
+          <p class="price">$80</p>
+          <p class="product-info">Size: M–XXL</p>
+          <p class="product-info">Recycled cotton blend</p>
+          <a class="buy-button" href="#order">Buy</a>
+        </article>
+        <article class="product-card">
+          <div class="product-image image-three" role="img" aria-label="Dark recycled fabric trousers"><span>03</span></div>
+          <h3>Wide-leg Trousers</h3>
+          <p class="price">$65</p>
+          <p class="product-info">Size: S–XL</p>
+          <p class="product-info">Recycled denim</p>
+          <a class="buy-button" href="#order">Buy</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="order-section" id="order">
+      <div class="section-heading">
+        <p class="eyebrow">YOUR ORDER</p>
+        <h2>Item specification</h2>
+      </div>
+      <form class="order-form" action="#" method="post">
+        <label for="item">Item Specification</label>
+        <input id="item" name="item" type="text" placeholder="Product and size" required>
+
+        <label for="address">Shipping Address</label>
+        <input id="address" name="address" type="text" placeholder="Your address" required>
+
+        <label for="phone">Contact Phone</label>
+        <input id="phone" name="phone" type="tel" placeholder="+7 000 000 00 00" required>
+
+        <button class="button submit-button" type="submit">Send order</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="stores">
+    <div>
+      <a class="footer-logo" href="#home">RE:FORM</a>
+      <p>Clothing with a second life.</p>
+    </div>
+    <p class="footer-note" id="philosophy">Made from recycled materials · Find us in selected stores</p>
+    <p class="copyright">© 2026 RE:FORM</p>
+  </footer>
+</body>
+</html>
