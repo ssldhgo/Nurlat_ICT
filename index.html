@@ -95,5 +95,17 @@
     <p class="footer-note" id="philosophy">Made from recycled materials · Find us in selected stores</p>
     <p class="copyright">© 2026 RE:FORM</p>
   </footer>
+  <script>
+  const menuToggle = document.querySelector(".menu-toggle");
+  const siteNav = document.querySelector(".site-nav");
+
+  menuToggle.addEventListener("click", () => {
+    siteNav.classList.toggle("is-open");
+
+    const isOpen = siteNav.classList.contains("is-open");
+
+    menuToggle.setAttribute("aria-expanded", isOpen);
+  });
+</script>
 </body>
 </html>
